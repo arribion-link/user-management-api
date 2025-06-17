@@ -1,0 +1,13 @@
+Creating a user management API with Node.js and Express
+Now, we’ll create the following API endpoints for user management:
+
+POST /signup: Registering a new user
+POST /login: Logging in
+GET /user: Retrieving a user’s profile (restricted to the user themselves)
+PATCH /user/:userId: Updating a user’s profile (restricted to the user themselves)
+GET /user/all: Retrieving all users (available to all users)
+PATCH /user/change-role/:userId: Updating a user’s role (restricted to admins)
+DELETE /user/:userId: Deleting a user (restricted to admins)
+
+
+We’ll also look at how you can use JSON Web Tokens (JWTs) to set up authentication for certain endpoints.
