@@ -9,9 +9,17 @@ const app = express();
 const port = process.env.PORT;
 
 //importing the controller Routers
-const userRouter = require('./routes/user.Router');
+const userRouter = require('./src/routes/user.Router');
+
+// // Application-level middleware
+// app.use((req, res, next) => {
+//     console.log('Application-level middleware.');
+//     console.log(`Request method: ${req.method}, URL: ${req.url}, Time: ${Date.now()}`);
+//     next(); // Proceed to the next middleware
+// });
 
 
+//routes
 app.use('/', userRouter);
 
 
